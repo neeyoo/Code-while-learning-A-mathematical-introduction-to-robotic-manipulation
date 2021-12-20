@@ -1,5 +1,5 @@
 function T = Twist2Trans(twist, theta)
-%this function is for transforming twist coordinates ξ to homogeneous
+%this function is for transforming twist coordinates ξ = [v;ω] to homogeneous
 %transformation matrix
 
 v = twist(1:3);
