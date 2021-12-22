@@ -17,18 +17,18 @@ This function is for calculating the inverse transformation matrix in SE(3)
 5. `T = FKtwist(twistlist, thetalist, Initconfig)`  
 This function is for the calculation of forward kinematics of the manipulator for the final tool frame configuration with twist coordinate inputs
 
-5. `Adg = Trans2adjoint(Trans)`  
+6. `Adg = Trans2adjoint(Trans)`  
 This function is for calculating the adjoint transformation which is a 6*6 matrix which transforms twists from one coordinate frame to another.
 
-6. `AdgInv = Trans2Invadjoint(Trans)`  
+7. `AdgInv = Trans2Invadjoint(Trans)`  
 This function is for calculating the inverse adjoint transformation which is a 6*6 matrix which transforms twists from one coordinate frame to another.
 
-7. `Jacob = JacobianSpatial(twistlist, thetalist)`
+8. `Jacob = JacobianSpatial(twistlist, thetalist)`
 This function is for the calculation of spatial manipulator Jacobian
 
-8. `Jacob = JacobianBody(twistlist, thetalist, Initconfig)`  
+9. `Jacob = JacobianBody(twistlist, thetalist, Initconfig)`  
 This function is for the calculation of body manipulator Jacobian where the end-effector velocities are with respect to the tool frame.
 
-9. `tauVec = InverseDynamics(thetaVec, dthetaVec, ddthetaVec, g, Ftip, Mlist, Glist, Slist)`  
+10. `tauVec = InverseDynamics(thetaVec, dthetaVec, ddthetaVec, g, Ftip, Mlist, Glist, Slist)`  
 This function uses forward-backward Newton-Euler iterations to solve the inverse dynamics
 
