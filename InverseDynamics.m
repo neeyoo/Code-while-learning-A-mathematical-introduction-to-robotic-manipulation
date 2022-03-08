@@ -2,7 +2,7 @@ function tauVec = InverseDynamics(thetaVec, dthetaVec, ddthetaVec, g,...
                     Ftip, Mlist, Glist, Slist)
 
 %This function uses forward-backward Newton-Euler iterations to solve the 
-% equation:
+% inverse dynamics:
 % taulist = Mlist(thetalist) * ddthetalist + c(thetalist, dthetalist) ...
 %           + g(thetalist) + Jtr(thetalist) * Ftip
 % Takes thetaVec: n-vector of joint variables,

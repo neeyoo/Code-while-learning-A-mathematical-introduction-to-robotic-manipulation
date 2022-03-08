@@ -10,9 +10,9 @@ Jacob = twistlist;
 T = Initconfig;
 
 
-for i = 1:n
-   T = Twist2Trans(twistlist(:, n+1-i), thetalist(n+1-i)) * T;
-   Jacob(:,n+1-i) = Trans2Invadjoint(T)*twistlist(:,n+1-i);
+for i = n:-1:1
+   T = Twist2Trans(twistlist(:, i), thetalist(i)) * T;
+   Jacob(:,i) = Trans2Invadjoint(T)*twistlist(:,i);
     
 end
 
